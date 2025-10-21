@@ -1,0 +1,4 @@
+from python_forestacion.patrones.strategy.impl.absorcion_constante_strategy import AbsorcionConstanteStrategy
+from python_forestacion.patrones.strategy.impl.absorcion_seasonal_strategy import AbsorcionSeasonalStrategy
+
+__all__ = ["AbsorcionConstanteStrategy", "AbsorcionSeasonalStrategy"]
