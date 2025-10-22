@@ -2,7 +2,7 @@
 INTEGRADOR FINAL - CONSOLIDACION COMPLETA DEL PROYECTO
 ============================================================================
 Directorio raiz: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion
-Fecha de generacion: 2025-10-21 21:39:45
+Fecha de generacion: 2025-10-22 10:13:59
 Total de archivos integrados: 66
 Total de directorios procesados: 21
 ============================================================================
@@ -363,7 +363,16 @@ __all__ = [
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/arbol.py
 # ==============================================================================
 
+"""
+Entidades de cultivos del sistema forestal.
+"""
+# Local application
 from python_forestacion.entidades.cultivos.cultivo import Cultivo
+
+# =============================================================================
+# CLASE BASE: ARBOL
+# =============================================================================
+
 
 class Arbol(Cultivo):
     """
@@ -402,7 +411,17 @@ class Arbol(Cultivo):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/cultivo.py
 # ==============================================================================
 
+"""
+Entidades de cultivos del sistema forestal.
+"""
+
+# Standard library
 from abc import ABC
+
+
+# =============================================================================
+# CLASE BASE: CULTIVO
+# =============================================================================
 
 class Cultivo(ABC):
     """
@@ -458,8 +477,12 @@ class Cultivo(ABC):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/hortaliza.py
 # ==============================================================================
 
+# Local application
 from python_forestacion.entidades.cultivos.cultivo import Cultivo
 
+# =============================================================================
+# SUBCLASE: HORTALIZA
+# =============================================================================
 
 class Hortaliza(Cultivo):
     """
@@ -499,6 +522,7 @@ class Hortaliza(Cultivo):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/lechuga.py
 # ==============================================================================
 
+# Local application
 from python_forestacion.constantes import AGUA_INICIAL_LECHUGA, SUPERFICIE_LECHUGA
 from python_forestacion.entidades.cultivos.hortaliza import Hortaliza
 
@@ -539,6 +563,7 @@ class Lechuga(Hortaliza):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/olivo.py
 # ==============================================================================
 
+# Local application
 from python_forestacion.constantes import AGUA_INICIAL_OLIVO, SUPERFICIE_OLIVO, ALTURA_INICIAL_ARBOL
 from python_forestacion.entidades.cultivos.arbol import Arbol
 from python_forestacion.entidades.cultivos.tipo_aceituna import TipoAceituna
@@ -625,6 +650,7 @@ class Pino(Arbol):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/tipo_aceituna.py
 # ==============================================================================
 
+# Standard library
 from enum import Enum
 
 class TipoAceituna(Enum):
@@ -639,6 +665,7 @@ class TipoAceituna(Enum):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/zanahoria.py
 # ==============================================================================
 
+# Local application
 from python_forestacion.constantes import AGUA_INICIAL_ZANAHORIA, SUPERFICIE_ZANAHORIA
 from python_forestacion.entidades.cultivos.hortaliza import Hortaliza
 
@@ -704,6 +731,7 @@ __all__ = [
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/personal/apto_medico.py
 # ==============================================================================
 
+# Standard library
 from datetime import date
 
 class AptoMedico:
@@ -748,6 +776,7 @@ class AptoMedico:
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/personal/herramienta.py
 # ==============================================================================
 
+
 class Herramienta:
     """
     Herramienta de trabajo.
@@ -790,6 +819,7 @@ class Herramienta:
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/personal/tarea.py
 # ==============================================================================
 
+# Standard library
 from datetime import date
 
 class Tarea:
@@ -834,8 +864,10 @@ class Tarea:
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/personal/trabajador.py
 # ==============================================================================
 
+# Standard library
 from typing import List
 
+# Local application
 from python_forestacion.entidades.personal.apto_medico import AptoMedico
 from python_forestacion.entidades.personal.tarea import Tarea
 
@@ -1005,6 +1037,7 @@ class Plantacion:
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/terrenos/registro_forestal.py
 # ==============================================================================
 
+# Local application
 from python_forestacion.entidades.terrenos.plantacion import Plantacion
 from python_forestacion.entidades.terrenos.tierra import Tierra
 
@@ -1177,7 +1210,7 @@ Excepcion para casos de agua agotada en plantaciones.
 Se lanza cuando se intenta regar pero no hay suficiente agua
 disponible en la plantacion.
 """
-
+# Local application
 from python_forestacion.excepciones.forestacion_exception import ForestacionException
 
 
@@ -1221,6 +1254,12 @@ class AguaAgotadaException(ForestacionException):
 # Directorio: excepciones
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/excepciones/forestacion_exception.py
 # ==============================================================================
+
+"""
+Excepcion base del sistema de gestion forestal.
+
+Todas las excepciones especificas del dominio heredan de esta clase.
+"""
 
 
 class ForestacionException(Exception):
@@ -1307,9 +1346,7 @@ Excepcion para errores de persistencia de datos.
 Se lanza cuando ocurren problemas al guardar o leer registros
 forestales desde disco.
 """
-
-from enum import Enum
-
+# Local application
 from python_forestacion.constantes import TipoOperacionPersistencia
 from python_forestacion.excepciones.forestacion_exception import ForestacionException
 
@@ -1360,12 +1397,10 @@ class PersistenciaException(ForestacionException):
 # ==============================================================================
 
 """
-Excepcion para casos de superficie insuficiente en plantaciones.
-
-Se lanza cuando se intenta plantar cultivos pero no hay suficiente
-superficie disponible en la plantacion.
+Excepciones especificas del dominio forestal.
 """
 
+# Local application
 from python_forestacion.excepciones.forestacion_exception import ForestacionException
 
 class SuperficieInsuficienteException(ForestacionException):
@@ -1546,7 +1581,10 @@ __all__ = ['Observable', 'Observer']
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/observer/observable.py
 # ==============================================================================
 
+# Local application
 from python_forestacion.patrones.observer.observer import Observer
+
+# Standard library
 from abc import ABC, abstractmethod
 from typing import Generic, TypeVar, List
 
@@ -1603,11 +1641,18 @@ class Observable(Generic[T], ABC):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/observer/observer.py
 # ==============================================================================
 
+"""
+Patron Observer con soporte para Generics.
+
+Este modulo implementa el patron Observer de forma tipo-segura
+utilizando Generic[T] de Python.
+"""
+
+# Standard library
 from abc import ABC, abstractmethod
 from typing import Generic, TypeVar, List
 
 T = TypeVar('T')
-
 
 class Observer(Generic[T], ABC):
     """
@@ -1989,7 +2034,12 @@ __all__ = [
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/strategy/absorcion_agua_strategy.py
 # ==============================================================================
 
+"""
+Patron Strategy para absorcion de agua.
 
+Define algoritmos intercambiables para calcular la cantidad
+de agua que absorbe un cultivo.
+"""
 
 # Standard library
 from abc import ABC, abstractmethod
@@ -2055,6 +2105,7 @@ __all__ = ["AbsorcionConstanteStrategy", "AbsorcionSeasonalStrategy"]
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/strategy/impl/absorcion_constante_strategy.py
 # ==============================================================================
 
+# Local application
 from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 # Standard library
 from datetime import date
@@ -2109,15 +2160,16 @@ class AbsorcionConstanteStrategy(AbsorcionAguaStrategy):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/strategy/impl/absorcion_seasonal_strategy.py
 # ==============================================================================
 
-
-from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 # Local application
+from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 from python_forestacion.constantes import (
     ABSORCION_SEASONAL_VERANO,
     ABSORCION_SEASONAL_INVIERNO,
     MES_INICIO_VERANO,
     MES_FIN_VERANO
 )
+
+# Standard library
 from datetime import date
 from typing import TYPE_CHECKING
 
@@ -2204,6 +2256,7 @@ Sistema de riego automatizado con sensores y control.
 # Standard library
 import threading
 import time
+from typing import TYPE_CHECKING
 
 # Local application
 from python_forestacion.patrones.observer.observable import Observer
@@ -2216,8 +2269,6 @@ from python_forestacion.constantes import (
 )
 from python_forestacion.excepciones.agua_agotada_exception import AguaAgotadaException
 from python_forestacion.riego.sensores import TemperaturaReaderTask, HumedadReaderTask
-
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.terrenos.plantacion import Plantacion
@@ -2502,16 +2553,16 @@ __all__ = [
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/arbol_service.py
 # ==============================================================================
 
-
+# Standard library
 from typing import TYPE_CHECKING
 
+# Local application
 from python_forestacion.servicios.cultivos.cultivo_service import CultivoService
+from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.arbol import Arbol
 
-# Local application
-from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 
 class ArbolService(CultivoService):
     """
@@ -2549,11 +2600,13 @@ class ArbolService(CultivoService):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/cultivo_service.py
 # ==============================================================================
 
+# Standard library
 from abc import ABC
 from datetime import date
-from python_forestacion.patrones.strategy import AbsorcionAguaStrategy
 from typing import TYPE_CHECKING
 
+# Local application
+from python_forestacion.patrones.strategy import AbsorcionAguaStrategy
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.cultivo import Cultivo
 
@@ -2626,6 +2679,7 @@ class CultivoService(ABC):
 from threading import Lock
 from typing import TYPE_CHECKING
 
+# Local application
 from python_forestacion.servicios.cultivos import LechugaService, OlivoService, PinoService, ZanahoriaService
 from python_forestacion.entidades.cultivos import Lechuga, Zanahoria, Olivo, Pino
 
@@ -2766,8 +2820,11 @@ class CultivoServiceRegistry:
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/lechuga_service.py
 # ==============================================================================
 
+# Local application
 from python_forestacion.patrones.strategy import AbsorcionConstanteStrategy
 from python_forestacion.servicios.cultivos.cultivo_service import CultivoService
+
+# Standard library
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
@@ -2798,12 +2855,12 @@ class LechugaService(CultivoService):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/olivo_service.py
 # ==============================================================================
 
+# Standard library
+from datetime import date
+from typing import TYPE_CHECKING
+# Local application
 from python_forestacion.constantes import CRECIMIENTO_OLIVO
 from python_forestacion.patrones.strategy import AbsorcionSeasonalStrategy
-from datetime import date
-
-from typing import TYPE_CHECKING
-
 from python_forestacion.servicios.cultivos import ArbolService
 
 if TYPE_CHECKING:
@@ -2857,16 +2914,15 @@ class OlivoService(ArbolService):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/pino_service.py
 # ==============================================================================
 
-
+# Standard library
 from datetime import date
+from typing import TYPE_CHECKING
 
-
+# Local application
 from python_forestacion.constantes import CRECIMIENTO_PINO
 from python_forestacion.patrones.strategy import AbsorcionSeasonalStrategy
 from python_forestacion.servicios.cultivos.arbol_service import ArbolService
 
-
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.cultivo import Cultivo
@@ -2918,10 +2974,13 @@ class PinoService(ArbolService):
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/zanahoria_service.py
 # ==============================================================================
 
+# Standard library
+from typing import TYPE_CHECKING
+
+# Local application
 from python_forestacion.patrones.strategy import AbsorcionConstanteStrategy
 from python_forestacion.servicios.cultivos.cultivo_service import CultivoService
 
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.cultivo import Cultivo
@@ -3268,7 +3327,7 @@ __all__ = [
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/terrenos/plantacion_service.py
 # ==============================================================================
 
-
+# Standard library
 from typing import List, Type
 
 # Local application
@@ -3396,6 +3455,7 @@ class PlantacionService:
 import os
 import pickle
 
+# Local application
 from python_forestacion.entidades.terrenos import RegistroForestal
 from python_forestacion.excepciones import PersistenciaException
 from python_forestacion.servicios.cultivos import CultivoServiceRegistry
@@ -3517,7 +3577,7 @@ class RegistroForestalService:
 # Ruta completa: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/terrenos/tierra_service.py
 # ==============================================================================
 
-
+# Local application
 from python_forestacion.entidades.terrenos import Tierra, Plantacion
 from python_forestacion.constantes import (
     AGUA_INICIAL_PLANTACION
@@ -3562,258 +3622,5 @@ class TierraService:
 ################################################################################
 # FIN DEL INTEGRADOR FINAL
 # Total de archivos: 66
-# Generado: 2025-10-21 21:39:45
+# Generado: 2025-10-22 10:13:59
 ################################################################################
-
-
-
-# Standard library
-import time
-from datetime import date
-
-# Local application
-from python_forestacion.servicios.terrenos.tierra_service import TierraService
-from python_forestacion.servicios.terrenos.plantacion_service import PlantacionService
-from python_forestacion.servicios.terrenos.registro_forestal_service import RegistroForestalService
-from python_forestacion.servicios.personal.trabajador_service import TrabajadorService
-from python_forestacion.servicios.negocio.fincas_service import FincasService
-from python_forestacion.servicios.cultivos.cultivo_service_registry import CultivoServiceRegistry
-from python_forestacion.entidades.terrenos.registro_forestal import RegistroForestal
-from python_forestacion.entidades.personal.trabajador import Trabajador
-from python_forestacion.entidades.personal.herramienta import Herramienta
-from python_forestacion.entidades.personal.tarea import Tarea
-from python_forestacion.entidades.cultivos.lechuga import Lechuga
-from python_forestacion.entidades.cultivos.pino import Pino
-from python_forestacion.riego.sensores.temperatura_reader_task import TemperaturaReaderTask
-from python_forestacion.riego.sensores.humedad_reader_task import HumedadReaderTask
-from python_forestacion.riego.control.control_riego_task import ControlRiegoTask
-from python_forestacion.constantes import THREAD_JOIN_TIMEOUT
-
-
-def main():
-    """Funcion principal que demuestra todo el sistema."""
-
-    print("=" * 70)
-    print("         SISTEMA DE GESTION FORESTAL - PATRONES DE DISENO")
-    print("=" * 70)
-    print()
-
-    # =========================================================================
-    # PATRON SINGLETON: Verificar instancia unica
-    # =========================================================================
-    print("-" * 70)
-    print("  PATRON SINGLETON: Inicializando servicios")
-    print("-" * 70)
-
-    registry1 = CultivoServiceRegistry.get_instance()
-    registry2 = CultivoServiceRegistry()
-    registry3 = CultivoServiceRegistry.get_instance()
-
-    if registry1 is registry2 is registry3:
-        print("[OK] Todos los servicios comparten la misma instancia del Registry")
-    else:
-        print("[ERROR] Las instancias no son iguales")
-
-    print()
-
-    # =========================================================================
-    # CREACION DE TERRENO Y PLANTACION
-    # =========================================================================
-    print("1. Creando tierra con plantacion...")
-    tierra_service = TierraService()
-    terreno = tierra_service.crear_tierra_con_plantacion(
-        id_padron_catastral=1,
-        superficie=10000.0,
-        domicilio="Agrelo, Mendoza",
-        nombre_plantacion="Finca del Madero"
-    )
-    plantacion = terreno.get_finca()
-    print(f"   Terreno creado: Padron {terreno.get_id_padron_catastral()}")
-    print(f"   Plantacion: {plantacion.get_nombre()}")
-    print(f"   Superficie disponible: {plantacion.get_superficie()} m2")
-    print()
-
-    # =========================================================================
-    # PATRON FACTORY: Plantar cultivos
-    # =========================================================================
-    print("-" * 70)
-    print("  PATRON FACTORY: Plantando cultivos")
-    print("-" * 70)
-
-    plantacion_service = PlantacionService()
-
-    print("2. Plantando 5 Pinos (usa Factory Method)...")
-    plantacion_service.plantar(plantacion, "Pino", 5)
-    print("   [OK] 5 Pinos plantados")
-
-    print("3. Plantando 5 Olivos (usa Factory Method)...")
-    plantacion_service.plantar(plantacion, "Olivo", 5)
-    print("   [OK] 5 Olivos plantados")
-
-    print("4. Plantando 5 Lechugas (usa Factory Method)...")
-    plantacion_service.plantar(plantacion, "Lechuga", 5)
-    print("   [OK] 5 Lechugas plantadas")
-
-    print("5. Plantando 5 Zanahorias (usa Factory Method)...")
-    plantacion_service.plantar(plantacion, "Zanahoria", 5)
-    print("   [OK] 5 Zanahorias plantadas")
-
-    print(f"\n   Total cultivos plantados: {len(plantacion.get_cultivos())}")
-    print()
-
-    # =========================================================================
-    # PATRON OBSERVER: Sistema de riego automatizado
-    # =========================================================================
-    print("-" * 70)
-    print("  PATRON OBSERVER: Sistema de riego automatizado")
-    print("-" * 70)
-
-    print("6. Iniciando sensores y control de riego...")
-
-    tarea_temp = TemperaturaReaderTask()
-    tarea_hum = HumedadReaderTask()
-
-    tarea_control = ControlRiegoTask(
-        tarea_temp,
-        tarea_hum,
-        plantacion,
-        plantacion_service
-    )
-
-    tarea_temp.start()
-    tarea_hum.start()
-    tarea_control.start()
-
-    print("   [OK] Sensores iniciados (threads daemon)")
-    print("   [OK] Control de riego activo")
-    print("   Dejando funcionar el sistema por 20 segundos...")
-    print()
-
-    time.sleep(20)
-
-    print("\n7. Deteniendo sistema de riego...")
-    tarea_temp.detener()
-    tarea_hum.detener()
-    tarea_control.detener()
-
-    tarea_temp.join(timeout=THREAD_JOIN_TIMEOUT)
-    tarea_hum.join(timeout=THREAD_JOIN_TIMEOUT)
-    tarea_control.join(timeout=THREAD_JOIN_TIMEOUT)
-
-    print("   [OK] Sistema detenido correctamente")
-    print()
-
-    # =========================================================================
-    # GESTION DE TRABAJADORES
-    # =========================================================================
-    print("-" * 70)
-    print("  GESTION DE PERSONAL")
-    print("-" * 70)
-
-    print("8. Creando trabajador con tareas...")
-    tareas = [
-        Tarea(1, date.today(), "Desmalezar"),
-        Tarea(2, date.today(), "Abonar"),
-        Tarea(3, date.today(), "Marcar surcos")
-    ]
-
-    trabajador = Trabajador(43888734, "Juan Perez", tareas)
-    plantacion.set_trabajadores([trabajador])
-    print(f"   Trabajador: {trabajador.get_nombre()}")
-    print(f"   Tareas asignadas: {len(trabajador.get_tareas())}")
-    print()
-
-    print("9. Asignando apto medico...")
-    trabajador_service = TrabajadorService()
-    trabajador_service.asignar_apto_medico(
-        trabajador,
-        apto=True,
-        fecha_emision=date.today(),
-        observaciones="Estado de salud: excelente"
-    )
-    print("   [OK] Apto medico asignado")
-    print()
-
-    print("10. Ejecutando tareas del trabajador...")
-    herramienta = Herramienta(1, "Pala", True)
-    resultado = trabajador_service.trabajar(trabajador, date.today(), herramienta)
-
-    if resultado:
-        print("   [OK] Tareas ejecutadas exitosamente")
-    else:
-        print("   [ERROR] No pudo trabajar")
-    print()
-
-    # =========================================================================
-    # OPERACIONES DE NEGOCIO
-    # =========================================================================
-    print("-" * 70)
-    print("  OPERACIONES DE NEGOCIO")
-    print("-" * 70)
-
-    print("11. Creando registro forestal...")
-    registro = RegistroForestal(
-        id_padron=1,
-        tierra=terreno,
-        plantacion=plantacion,
-        propietario="Juan Perez",
-        avaluo=50309233.55
-    )
-    print("   [OK] Registro creado")
-    print()
-
-    print("12. Agregando finca al servicio de gestion...")
-    fincas_service = FincasService()
-    fincas_service.add_finca(registro)
-    print("   [OK] Finca agregada")
-    print()
-
-    print("13. Fumigando plantacion...")
-    fincas_service.fumigar(1, "insecto organico")
-    print()
-
-    print("14. Cosechando y empaquetando cultivos...")
-    print("\n   Cosechando Lechugas:")
-    caja_lechugas = fincas_service.cosechar_yempaquetar(Lechuga)
-    caja_lechugas.mostrar_contenido_caja()
-
-    print("\n   Cosechando Pinos:")
-    caja_pinos = fincas_service.cosechar_yempaquetar(Pino)
-    caja_pinos.mostrar_contenido_caja()
-    print()
-
-    # =========================================================================
-    # PERSISTENCIA
-    # =========================================================================
-    print("-" * 70)
-    print("  PERSISTENCIA DE DATOS")
-    print("-" * 70)
-
-    print("15. Persistiendo registro forestal...")
-    registro_service = RegistroForestalService()
-    registro_service.persistir(registro)
-    print()
-
-    print("16. Recuperando registro desde disco...")
-    registro_leido = RegistroForestalService.leer_registro("Juan Perez")
-    print()
-
-    print("17. Mostrando datos del registro recuperado...")
-    registro_service.mostrar_datos(registro_leido)
-    print()
-
-    # =========================================================================
-    # RESUMEN FINAL
-    # =========================================================================
-    print("=" * 70)
-    print("              EJEMPLO COMPLETADO EXITOSAMENTE")
-    print("=" * 70)
-    print("  [OK] SINGLETON   - CultivoServiceRegistry (instancia unica)")
-    print("  [OK] FACTORY     - Creacion de cultivos")
-    print("  [OK] OBSERVER    - Sistema de sensores y eventos")
-    print("  [OK] STRATEGY    - Algoritmos de absorcion de agua")
-    print("=" * 70)
-
-
-if __name__ == "__main__":
-    main()

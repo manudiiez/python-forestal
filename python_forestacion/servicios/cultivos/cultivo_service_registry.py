@@ -3,6 +3,7 @@
 from threading import Lock
 from typing import TYPE_CHECKING
 
+# Local application
 from python_forestacion.servicios.cultivos import LechugaService, OlivoService, PinoService, ZanahoriaService
 from python_forestacion.entidades.cultivos import Lechuga, Zanahoria, Olivo, Pino
 

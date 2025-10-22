@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/terrenos
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 4
 """
 
@@ -30,7 +30,7 @@ __all__ = [
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/terrenos/plantacion_service.py
 # ================================================================================
 
-
+# Standard library
 from typing import List, Type
 
 # Local application
@@ -157,6 +157,7 @@ class PlantacionService:
 import os
 import pickle
 
+# Local application
 from python_forestacion.entidades.terrenos import RegistroForestal
 from python_forestacion.excepciones import PersistenciaException
 from python_forestacion.servicios.cultivos import CultivoServiceRegistry
@@ -277,7 +278,7 @@ class RegistroForestalService:
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/terrenos/tierra_service.py
 # ================================================================================
 
-
+# Local application
 from python_forestacion.entidades.terrenos import Tierra, Plantacion
 from python_forestacion.constantes import (
     AGUA_INICIAL_PLANTACION

@@ -1,5 +1,9 @@
+# Local application
 from python_forestacion.entidades.cultivos.cultivo import Cultivo
 
+# =============================================================================
+# SUBCLASE: HORTALIZA
+# =============================================================================
 
 class Hortaliza(Cultivo):
     """

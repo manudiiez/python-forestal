@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/personal
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 5
 """
 
@@ -30,6 +30,7 @@ __all__ = [
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/personal/apto_medico.py
 # ================================================================================
 
+# Standard library
 from datetime import date
 
 class AptoMedico:
@@ -73,6 +74,7 @@ class AptoMedico:
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/personal/herramienta.py
 # ================================================================================
 
+
 class Herramienta:
     """
     Herramienta de trabajo.
@@ -114,6 +116,7 @@ class Herramienta:
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/personal/tarea.py
 # ================================================================================
 
+# Standard library
 from datetime import date
 
 class Tarea:
@@ -157,8 +160,10 @@ class Tarea:
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/personal/trabajador.py
 # ================================================================================
 
+# Standard library
 from typing import List
 
+# Local application
 from python_forestacion.entidades.personal.apto_medico import AptoMedico
 from python_forestacion.entidades.personal.tarea import Tarea
 

@@ -1,5 +1,7 @@
+# Standard library
 from typing import List
 
+# Local application
 from python_forestacion.entidades.personal.apto_medico import AptoMedico
 from python_forestacion.entidades.personal.tarea import Tarea
 

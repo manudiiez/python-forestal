@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/riego/control
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 2
 """
 
@@ -28,6 +28,7 @@ Sistema de riego automatizado con sensores y control.
 # Standard library
 import threading
 import time
+from typing import TYPE_CHECKING
 
 # Local application
 from python_forestacion.patrones.observer.observable import Observer
@@ -40,8 +41,6 @@ from python_forestacion.constantes import (
 )
 from python_forestacion.excepciones.agua_agotada_exception import AguaAgotadaException
 from python_forestacion.riego.sensores import TemperaturaReaderTask, HumedadReaderTask
-
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.terrenos.plantacion import Plantacion

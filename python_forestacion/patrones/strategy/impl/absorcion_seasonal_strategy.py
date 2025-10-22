@@ -1,12 +1,13 @@
-
-from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 # Local application
+from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 from python_forestacion.constantes import (
     ABSORCION_SEASONAL_VERANO,
     ABSORCION_SEASONAL_INVIERNO,
     MES_INICIO_VERANO,
     MES_FIN_VERANO
 )
+
+# Standard library
 from datetime import date
 from typing import TYPE_CHECKING
 

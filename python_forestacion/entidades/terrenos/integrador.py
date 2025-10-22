@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/terrenos
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 4
 """
 
@@ -117,6 +117,7 @@ class Plantacion:
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/terrenos/registro_forestal.py
 # ================================================================================
 
+# Local application
 from python_forestacion.entidades.terrenos.plantacion import Plantacion
 from python_forestacion.entidades.terrenos.tierra import Tierra
 

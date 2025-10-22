@@ -4,9 +4,7 @@ Excepcion para errores de persistencia de datos.
 Se lanza cuando ocurren problemas al guardar o leer registros
 forestales desde disco.
 """
-
-from enum import Enum
-
+# Local application
 from python_forestacion.constantes import TipoOperacionPersistencia
 from python_forestacion.excepciones.forestacion_exception import ForestacionException
 

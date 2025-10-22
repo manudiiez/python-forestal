@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/excepciones
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 6
 """
 
@@ -36,7 +36,7 @@ Excepcion para casos de agua agotada en plantaciones.
 Se lanza cuando se intenta regar pero no hay suficiente agua
 disponible en la plantacion.
 """
-
+# Local application
 from python_forestacion.excepciones.forestacion_exception import ForestacionException
 
 
@@ -79,6 +79,12 @@ class AguaAgotadaException(ForestacionException):
 # ARCHIVO 3/6: forestacion_exception.py
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/excepciones/forestacion_exception.py
 # ================================================================================
+
+"""
+Excepcion base del sistema de gestion forestal.
+
+Todas las excepciones especificas del dominio heredan de esta clase.
+"""
 
 
 class ForestacionException(Exception):
@@ -163,9 +169,7 @@ Excepcion para errores de persistencia de datos.
 Se lanza cuando ocurren problemas al guardar o leer registros
 forestales desde disco.
 """
-
-from enum import Enum
-
+# Local application
 from python_forestacion.constantes import TipoOperacionPersistencia
 from python_forestacion.excepciones.forestacion_exception import ForestacionException
 
@@ -215,12 +219,10 @@ class PersistenciaException(ForestacionException):
 # ================================================================================
 
 """
-Excepcion para casos de superficie insuficiente en plantaciones.
-
-Se lanza cuando se intenta plantar cultivos pero no hay suficiente
-superficie disponible en la plantacion.
+Excepciones especificas del dominio forestal.
 """
 
+# Local application
 from python_forestacion.excepciones.forestacion_exception import ForestacionException
 
 class SuperficieInsuficienteException(ForestacionException):

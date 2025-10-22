@@ -1,10 +1,8 @@
 """
-Excepcion para casos de superficie insuficiente en plantaciones.
-
-Se lanza cuando se intenta plantar cultivos pero no hay suficiente
-superficie disponible en la plantacion.
+Excepciones especificas del dominio forestal.
 """
 
+# Local application
 from python_forestacion.excepciones.forestacion_exception import ForestacionException
 
 class SuperficieInsuficienteException(ForestacionException):

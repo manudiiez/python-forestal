@@ -1,3 +1,4 @@
+# Local application
 from python_forestacion.constantes import AGUA_INICIAL_OLIVO, SUPERFICIE_OLIVO, ALTURA_INICIAL_ARBOL
 from python_forestacion.entidades.cultivos.arbol import Arbol
 from python_forestacion.entidades.cultivos.tipo_aceituna import TipoAceituna

@@ -1,3 +1,4 @@
+
 class Herramienta:
     """
     Herramienta de trabajo.

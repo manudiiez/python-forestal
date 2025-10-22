@@ -1,4 +1,13 @@
+"""
+Entidades de cultivos del sistema forestal.
+"""
+# Local application
 from python_forestacion.entidades.cultivos.cultivo import Cultivo
+
+# =============================================================================
+# CLASE BASE: ARBOL
+# =============================================================================
+
 
 class Arbol(Cultivo):
     """

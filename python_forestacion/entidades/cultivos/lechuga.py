@@ -1,3 +1,4 @@
+# Local application
 from python_forestacion.constantes import AGUA_INICIAL_LECHUGA, SUPERFICIE_LECHUGA
 from python_forestacion.entidades.cultivos.hortaliza import Hortaliza
 

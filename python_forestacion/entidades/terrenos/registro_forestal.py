@@ -1,3 +1,4 @@
+# Local application
 from python_forestacion.entidades.terrenos.plantacion import Plantacion
 from python_forestacion.entidades.terrenos.tierra import Tierra
 

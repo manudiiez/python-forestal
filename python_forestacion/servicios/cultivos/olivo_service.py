@@ -1,9 +1,9 @@
+# Standard library
+from datetime import date
+from typing import TYPE_CHECKING
+# Local application
 from python_forestacion.constantes import CRECIMIENTO_OLIVO
 from python_forestacion.patrones.strategy import AbsorcionSeasonalStrategy
-from datetime import date
-
-from typing import TYPE_CHECKING
-
 from python_forestacion.servicios.cultivos import ArbolService
 
 if TYPE_CHECKING:

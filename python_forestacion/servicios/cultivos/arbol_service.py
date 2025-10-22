@@ -1,13 +1,13 @@
-
+# Standard library
 from typing import TYPE_CHECKING
 
+# Local application
 from python_forestacion.servicios.cultivos.cultivo_service import CultivoService
+from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.arbol import Arbol
 
-# Local application
-from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 
 class ArbolService(CultivoService):
     """

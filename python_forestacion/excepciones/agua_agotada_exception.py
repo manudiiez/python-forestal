@@ -4,7 +4,7 @@ Excepcion para casos de agua agotada en plantaciones.
 Se lanza cuando se intenta regar pero no hay suficiente agua
 disponible en la plantacion.
 """
-
+# Local application
 from python_forestacion.excepciones.forestacion_exception import ForestacionException
 
 

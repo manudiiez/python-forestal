@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/strategy
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 2
 """
 
@@ -25,7 +25,12 @@ __all__ = [
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/strategy/absorcion_agua_strategy.py
 # ================================================================================
 
+"""
+Patron Strategy para absorcion de agua.
 
+Define algoritmos intercambiables para calcular la cantidad
+de agua que absorbe un cultivo.
+"""
 
 # Standard library
 from abc import ABC, abstractmethod

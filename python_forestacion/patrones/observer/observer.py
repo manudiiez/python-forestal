@@ -1,8 +1,15 @@
+"""
+Patron Observer con soporte para Generics.
+
+Este modulo implementa el patron Observer de forma tipo-segura
+utilizando Generic[T] de Python.
+"""
+
+# Standard library
 from abc import ABC, abstractmethod
 from typing import Generic, TypeVar, List
 
 T = TypeVar('T')
-
 
 class Observer(Generic[T], ABC):
     """

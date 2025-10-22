@@ -1,8 +1,10 @@
+# Standard library
 from abc import ABC
 from datetime import date
-from python_forestacion.patrones.strategy import AbsorcionAguaStrategy
 from typing import TYPE_CHECKING
 
+# Local application
+from python_forestacion.patrones.strategy import AbsorcionAguaStrategy
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.cultivo import Cultivo
 

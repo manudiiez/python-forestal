@@ -1,3 +1,4 @@
+# Standard library
 from enum import Enum
 
 class TipoAceituna(Enum):

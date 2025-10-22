@@ -1,4 +1,14 @@
+"""
+Entidades de cultivos del sistema forestal.
+"""
+
+# Standard library
 from abc import ABC
+
+
+# =============================================================================
+# CLASE BASE: CULTIVO
+# =============================================================================
 
 class Cultivo(ABC):
     """

@@ -1,4 +1,7 @@
+# Local application
 from python_forestacion.patrones.observer.observer import Observer
+
+# Standard library
 from abc import ABC, abstractmethod
 from typing import Generic, TypeVar, List
 

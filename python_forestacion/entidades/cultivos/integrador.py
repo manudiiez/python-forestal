@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 9
 """
 
@@ -41,7 +41,16 @@ __all__ = [
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/arbol.py
 # ================================================================================
 
+"""
+Entidades de cultivos del sistema forestal.
+"""
+# Local application
 from python_forestacion.entidades.cultivos.cultivo import Cultivo
+
+# =============================================================================
+# CLASE BASE: ARBOL
+# =============================================================================
+
 
 class Arbol(Cultivo):
     """
@@ -79,7 +88,17 @@ class Arbol(Cultivo):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/cultivo.py
 # ================================================================================
 
+"""
+Entidades de cultivos del sistema forestal.
+"""
+
+# Standard library
 from abc import ABC
+
+
+# =============================================================================
+# CLASE BASE: CULTIVO
+# =============================================================================
 
 class Cultivo(ABC):
     """
@@ -134,8 +153,12 @@ class Cultivo(ABC):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/hortaliza.py
 # ================================================================================
 
+# Local application
 from python_forestacion.entidades.cultivos.cultivo import Cultivo
 
+# =============================================================================
+# SUBCLASE: HORTALIZA
+# =============================================================================
 
 class Hortaliza(Cultivo):
     """
@@ -174,6 +197,7 @@ class Hortaliza(Cultivo):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/lechuga.py
 # ================================================================================
 
+# Local application
 from python_forestacion.constantes import AGUA_INICIAL_LECHUGA, SUPERFICIE_LECHUGA
 from python_forestacion.entidades.cultivos.hortaliza import Hortaliza
 
@@ -213,6 +237,7 @@ class Lechuga(Hortaliza):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/olivo.py
 # ================================================================================
 
+# Local application
 from python_forestacion.constantes import AGUA_INICIAL_OLIVO, SUPERFICIE_OLIVO, ALTURA_INICIAL_ARBOL
 from python_forestacion.entidades.cultivos.arbol import Arbol
 from python_forestacion.entidades.cultivos.tipo_aceituna import TipoAceituna
@@ -297,6 +322,7 @@ class Pino(Arbol):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/tipo_aceituna.py
 # ================================================================================
 
+# Standard library
 from enum import Enum
 
 class TipoAceituna(Enum):
@@ -310,6 +336,7 @@ class TipoAceituna(Enum):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/entidades/cultivos/zanahoria.py
 # ================================================================================
 
+# Local application
 from python_forestacion.constantes import AGUA_INICIAL_ZANAHORIA, SUPERFICIE_ZANAHORIA
 from python_forestacion.entidades.cultivos.hortaliza import Hortaliza
 

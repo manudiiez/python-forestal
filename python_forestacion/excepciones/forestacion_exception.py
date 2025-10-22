@@ -1,3 +1,9 @@
+"""
+Excepcion base del sistema de gestion forestal.
+
+Todas las excepciones especificas del dominio heredan de esta clase.
+"""
+
 
 class ForestacionException(Exception):
     """

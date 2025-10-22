@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/strategy/impl
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 3
 """
 
@@ -20,6 +20,7 @@ __all__ = ["AbsorcionConstanteStrategy", "AbsorcionSeasonalStrategy"]
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/strategy/impl/absorcion_constante_strategy.py
 # ================================================================================
 
+# Local application
 from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 # Standard library
 from datetime import date
@@ -73,15 +74,16 @@ class AbsorcionConstanteStrategy(AbsorcionAguaStrategy):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/strategy/impl/absorcion_seasonal_strategy.py
 # ================================================================================
 
-
-from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 # Local application
+from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 from python_forestacion.constantes import (
     ABSORCION_SEASONAL_VERANO,
     ABSORCION_SEASONAL_INVIERNO,
     MES_INICIO_VERANO,
     MES_FIN_VERANO
 )
+
+# Standard library
 from datetime import date
 from typing import TYPE_CHECKING
 

@@ -1,4 +1,4 @@
-
+# Local application
 from python_forestacion.entidades.terrenos import Tierra, Plantacion
 from python_forestacion.constantes import (
     AGUA_INICIAL_PLANTACION

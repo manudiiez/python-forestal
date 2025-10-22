@@ -5,6 +5,7 @@ Sistema de riego automatizado con sensores y control.
 # Standard library
 import threading
 import time
+from typing import TYPE_CHECKING
 
 # Local application
 from python_forestacion.patrones.observer.observable import Observer
@@ -17,8 +18,6 @@ from python_forestacion.constantes import (
 )
 from python_forestacion.excepciones.agua_agotada_exception import AguaAgotadaException
 from python_forestacion.riego.sensores import TemperaturaReaderTask, HumedadReaderTask
-
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.terrenos.plantacion import Plantacion

@@ -1,4 +1,9 @@
+"""
+Patron Strategy para absorcion de agua.
 
+Define algoritmos intercambiables para calcular la cantidad
+de agua que absorbe un cultivo.
+"""
 
 # Standard library
 from abc import ABC, abstractmethod

@@ -1,13 +1,12 @@
-
+# Standard library
 from datetime import date
+from typing import TYPE_CHECKING
 
-
+# Local application
 from python_forestacion.constantes import CRECIMIENTO_PINO
 from python_forestacion.patrones.strategy import AbsorcionSeasonalStrategy
 from python_forestacion.servicios.cultivos.arbol_service import ArbolService
 
-
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.cultivo import Cultivo

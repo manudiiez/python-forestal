@@ -1,3 +1,4 @@
+# Local application
 from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 # Standard library
 from datetime import date

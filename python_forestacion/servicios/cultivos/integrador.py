@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 8
 """
 
@@ -35,16 +35,16 @@ __all__ = [
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/arbol_service.py
 # ================================================================================
 
-
+# Standard library
 from typing import TYPE_CHECKING
 
+# Local application
 from python_forestacion.servicios.cultivos.cultivo_service import CultivoService
+from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.arbol import Arbol
 
-# Local application
-from python_forestacion.patrones.strategy.absorcion_agua_strategy import AbsorcionAguaStrategy
 
 class ArbolService(CultivoService):
     """
@@ -81,11 +81,13 @@ class ArbolService(CultivoService):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/cultivo_service.py
 # ================================================================================
 
+# Standard library
 from abc import ABC
 from datetime import date
-from python_forestacion.patrones.strategy import AbsorcionAguaStrategy
 from typing import TYPE_CHECKING
 
+# Local application
+from python_forestacion.patrones.strategy import AbsorcionAguaStrategy
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.cultivo import Cultivo
 
@@ -157,6 +159,7 @@ class CultivoService(ABC):
 from threading import Lock
 from typing import TYPE_CHECKING
 
+# Local application
 from python_forestacion.servicios.cultivos import LechugaService, OlivoService, PinoService, ZanahoriaService
 from python_forestacion.entidades.cultivos import Lechuga, Zanahoria, Olivo, Pino
 
@@ -296,8 +299,11 @@ class CultivoServiceRegistry:
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/lechuga_service.py
 # ================================================================================
 
+# Local application
 from python_forestacion.patrones.strategy import AbsorcionConstanteStrategy
 from python_forestacion.servicios.cultivos.cultivo_service import CultivoService
+
+# Standard library
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
@@ -327,12 +333,12 @@ class LechugaService(CultivoService):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/olivo_service.py
 # ================================================================================
 
+# Standard library
+from datetime import date
+from typing import TYPE_CHECKING
+# Local application
 from python_forestacion.constantes import CRECIMIENTO_OLIVO
 from python_forestacion.patrones.strategy import AbsorcionSeasonalStrategy
-from datetime import date
-
-from typing import TYPE_CHECKING
-
 from python_forestacion.servicios.cultivos import ArbolService
 
 if TYPE_CHECKING:
@@ -385,16 +391,15 @@ class OlivoService(ArbolService):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/pino_service.py
 # ================================================================================
 
-
+# Standard library
 from datetime import date
+from typing import TYPE_CHECKING
 
-
+# Local application
 from python_forestacion.constantes import CRECIMIENTO_PINO
 from python_forestacion.patrones.strategy import AbsorcionSeasonalStrategy
 from python_forestacion.servicios.cultivos.arbol_service import ArbolService
 
-
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.cultivo import Cultivo
@@ -445,10 +450,13 @@ class PinoService(ArbolService):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/servicios/cultivos/zanahoria_service.py
 # ================================================================================
 
+# Standard library
+from typing import TYPE_CHECKING
+
+# Local application
 from python_forestacion.patrones.strategy import AbsorcionConstanteStrategy
 from python_forestacion.servicios.cultivos.cultivo_service import CultivoService
 
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from python_forestacion.entidades.cultivos.cultivo import Cultivo

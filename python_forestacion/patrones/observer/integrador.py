@@ -1,7 +1,7 @@
 """
 Archivo integrador generado automaticamente
 Directorio: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/observer
-Fecha: 2025-10-21 21:39:45
+Fecha: 2025-10-22 10:13:59
 Total de archivos integrados: 3
 """
 
@@ -23,7 +23,10 @@ __all__ = ['Observable', 'Observer']
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/observer/observable.py
 # ================================================================================
 
+# Local application
 from python_forestacion.patrones.observer.observer import Observer
+
+# Standard library
 from abc import ABC, abstractmethod
 from typing import Generic, TypeVar, List
 
@@ -79,11 +82,18 @@ class Observable(Generic[T], ABC):
 # Ruta: /Users/manudiiez/Desktop/Mis Carpetas/Facultad/Diseño de sistemas/ParcialForestal/python-forestal/python_forestacion/patrones/observer/observer.py
 # ================================================================================
 
+"""
+Patron Observer con soporte para Generics.
+
+Este modulo implementa el patron Observer de forma tipo-segura
+utilizando Generic[T] de Python.
+"""
+
+# Standard library
 from abc import ABC, abstractmethod
 from typing import Generic, TypeVar, List
 
 T = TypeVar('T')
-
 
 class Observer(Generic[T], ABC):
     """
